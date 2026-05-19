@@ -1,0 +1,27 @@
+<header>
+   <nav>
+    <a href="Home.HTML">Home</a> |
+    <a href="Background.HTML">Background</a> |
+    <a href="Project.HTML">Deliverable</a> |
+    <a href="Bibiography.HTML">Bibiography</a>
+    </nav>
+</header>
+<H1>
+    The Deliverable
+</H1>
+<H3>Check out my forecast plot for wait times at Hagrid's Motorbike Adventure in April 2026! </H3>
+<a href="forecast_plot.html">Open forecast plot</a>
+<H2>A few notes</H2>
+<body>
+<p>
+    In my deliverable, I focused on predicting the wait times at my favorite roller coaster at Universal Studios, Hagrid's Motorbike adventure. To learn more about the process of making it, check out my <a href="Background.HTML">background</a>
+</p>
+    To use the forecast plot, please keep a few details in mind. This model was trained specifically to predict wait times when the crowd level at Universal is high. To find out if a crowd level is high, please check out the <a href="https://queue-times.com/en-US/parks/64/calendar/2026/04">crowd calendar</a>. I classified anything from 70%-100% as a busy day (this will appear as red or orange color coded days). If a day is not busy at Universal Studios, the forecast plot will be much less accurate.
+<p>
+    All time is measured in military time, to avoid have repitions in the data (ex. having two sets of values for April first at (9:00)). When you hover over a part of the plot, it will show you the date at time at the bottom. From about 10:00 until 8:00, the park is closed, so there are no wait times applicable at those times. Also, since April 5th was not a busy day at the park, no data was collected. This means that there is a gap in the plo only at that date, to ensure that the wait times on April 5th do not affect the forecasting for the rest of the month.
+</p>
+<p>
+    You can hover over parts of the graph to see specific trend predictions, as well as the upper and lower bounds of the prediction at a certain time of day. This represents the uncertainty around a predicted value. There is a 95% probability that the actual wait time will lie between the two bounds. You may notice that as the month goes on, the upper and lower bounds start to become larger. Some lower bounds are not actually possible (there can not be a negative wait time). Since this plot was only trained on about a week's worth of data, it is not able to make the most precise predictions the further out we go. To fix this in the future, I would have to input not just a week's worth of data, but months or maybe even years.
+</p>
+You can also zoom in on certain days by using the navigator at the bottom. Simply click and drag the selection window to the day you want to see. The wait time is measured in minutes, just as it would be posted at Universal Studios.
+</body>
